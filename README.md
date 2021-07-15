@@ -1,4 +1,4 @@
-# 收银机硬件端ui
+# 收银机硬件端
 
 使用Electron、React、Redux、React-Router 实现。   
 前期使用nwjs开发，因nwjs arm版本的一些硬核问题不好解决，最后运行在硬件上使用了electron。  
