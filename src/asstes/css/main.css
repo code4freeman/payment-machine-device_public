@@ -1,0 +1,29 @@
+@import "../iconfont//iconfont.css";
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#root {
+    height: 100%;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}/* 整体样式 */
+::-webkit-scrollbar-track{
+    /* background: red; */
+}/* 轨道 */
+::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.5);
+}/* 滑块 */
+::-webkit-scrollbar-button{}/* 两端小方块 */
+::-webkit-scrollbar-track-piece{}/* 不包含滑块的轨道区 */
+::-webkit-scrollbar-corner{}/* 两端小方块交汇处 */
+::-webkit-resizer{}/* 如textare改变大小 */

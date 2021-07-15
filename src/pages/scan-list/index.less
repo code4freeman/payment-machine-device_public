@@ -1,0 +1,80 @@
+.scan-list {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: #f0f1f6;
+    display: flex;
+    flex-direction: column;
+    .flex-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cards {
+        flex-grow: 1;
+        overflow-y: auto;
+        .none-tips {
+            color: grey;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .card {
+            background: #fff;
+            width: calc(100% - 32px);
+            margin: 10px 16px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            img {
+                height: 100px;
+                width: 100px;
+                background: rgba(0,0,0,0.1);
+            }
+            .right-content {
+                height: 100px;
+                width: calc(100% - 110px);
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h1 {
+                    margin: 0;
+                    color: #333;
+                    font-size: 18px;
+                    max-width: 80%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .price {
+                    font-size: 30px;
+                    color: red;
+                }
+                .count {
+                    font-size: 20px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .info {
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        position: relative; z-index: 2;
+        flex-shrink: 0;
+        background: #fff;
+        padding: 16px;
+        .total-text {
+            font-size: 16px;
+            color: grey;
+        }
+        .total-price {
+            color: red;
+            font-size: 25px;
+            font-weight: 800;
+        }
+        .btn-group {
+            margin-top: 10px;
+        }
+    }
+}
